@@ -1,136 +1,188 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <title>Portfólio Acadêmico</title>
+<meta charset="UTF-8">
+<title>Portfólio Acadêmico</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background: #f4f4f4;
-        }
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
-        header {
-            background: #111827;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
+    body {
+        font-family: 'Segoe UI', Arial, sans-serif;
+        background: linear-gradient(135deg, #0f172a, #1e293b);
+        color: #e5e7eb;
+    }
 
-        .container {
-            max-width: 900px;
-            margin: 20px auto;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-        }
+    header {
+        text-align: center;
+        padding: 60px 20px;
+        background: rgba(0,0,0,0.3);
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
 
-        .item {
-            border-bottom: 1px solid #ddd;
-            padding: 12px 0;
-        }
+    header h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
 
-        a {
-            color: #2563eb;
-            text-decoration: none;
-        }
+    header p {
+        color: #94a3b8;
+    }
 
-        a:hover {
-            text-decoration: underline;
-        }
+    .container {
+        max-width: 1100px;
+        margin: 40px auto;
+        padding: 20px;
+    }
 
-        h2 {
-            margin-top: 30px;
-        }
-    </style>
+    h2 {
+        margin: 50px 0 20px;
+        font-size: 1.4rem;
+        border-left: 4px solid #38bdf8;
+        padding-left: 12px;
+        color: #e2e8f0;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 18px;
+    }
+
+    .card {
+        background: rgba(255,255,255,0.05);
+        border: 1px solid rgba(255,255,255,0.08);
+        border-radius: 14px;
+        padding: 18px;
+        transition: 0.25s ease;
+        backdrop-filter: blur(8px);
+    }
+
+    .card:hover {
+        transform: translateY(-6px);
+        border-color: #38bdf8;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    }
+
+    .tag {
+        display: inline-block;
+        font-size: 11px;
+        padding: 4px 8px;
+        border-radius: 6px;
+        background: #38bdf8;
+        color: #0f172a;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    h3 {
+        margin-bottom: 10px;
+        font-size: 1rem;
+        color: #f1f5f9;
+    }
+
+    a {
+        display: inline-block;
+        margin-top: 8px;
+        color: #38bdf8;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    footer {
+        text-align: center;
+        padding: 30px;
+        color: #64748b;
+        margin-top: 50px;
+    }
+</style>
 </head>
 
 <body>
 
 <header>
-    <h1>Portfólio de Atividades</h1>
-    <p>Engenharia / Algoritmos / Projetos</p>
+    <h1>Portfólio Acadêmico</h1>
+    <p>Engenharia • Algoritmos • Python • Dados</p>
 </header>
 
 <div class="container">
 
-    <h2>📌 Relatórios e Documentos</h2>
+<!-- ================= ATIVIDADE 1 ================= -->
+<h2>Atividade 1 - Catálogo Esportivo</h2>
+<div class="grid">
 
-    <div class="item">
-        <h3>Relatório Catálogo esportivo</h3>
-        <a href="Relatório%20Catálogo%20esportivo.pdf" target="_blank">Abrir</a>
-    </div>
-
-    <div class="item">
-        <h3>Relatório Modulação</h3>
-        <a href="Relatorio_Modularização.docx" target="_blank">Abrir</a>
-    </div>
-
-    <div class="item">
-        <h3>Relatório teste 3 dias</h3>
-        <a href="Relatório_teste%203ias.pdf" target="_blank">Abrir</a>
-    </div>
-
-    <h2>💻 Algoritmos e Python</h2>
-
-    <div class="item">
-        <h3>Atividade Algoritmos</h3>
-        <a href="Atividade%20algoritmos.pdf" target="_blank">Abrir</a>
-    </div>
-
-    <div class="item">
-        <h3>Atividade Algoritmos Atualizada</h3>
-        <a href="Atividade%20algoritmos%20atualizada.pdf" target="_blank">Abrir</a>
-    </div>
-
-    <div class="item">
-        <h3>Exercícios Algoritmos ENG</h3>
-        <a href="exercicios_algoritmos_eng.pdf" target="_blank">Abrir</a>
-    </div>
-
-    <div class="item">
-        <h3>Introdução a Algoritmos</h3>
-        <a href="ATIVIDADE%20-%20INTRODUÇÃO%20A%20ALGORITMOS.pdf" target="_blank">Abrir</a>
-    </div>
-
-    <h2>🐍 Scripts Python</h2>
-
-    <div class="item">
-        <h3>atividade_python</h3>
-        <a href="atividade_python.py" target="_blank">Abrir</a>
-    </div>
-
-    <div class="item">
-        <h3>chatgpt.py</h3>
-        <a href="chatgpt.py" target="_blank">Abrir</a>
-    </div>
-
-    <div class="item">
-        <h3>gemini.py</h3>
-        <a href="gemini.py" target="_blank">Abrir</a>
-    </div>
-
-    <h2>📊 Dados</h2>
-
-    <div class="item">
-        <h3>Eventos CSV</h3>
-        <a href="Eventos.csv" target="_blank">Abrir</a>
-    </div>
-
-    <div class="item">
-        <h3>Eventos JSON</h3>
-        <a href="Eventos.json" target="_blank">Abrir</a>
-    </div>
-
-    <h2>📄 Outros</h2>
-
-    <div class="item">
-        <h3>README</h3>
-        <a href="Read%20me" target="_blank">Abrir</a>
-    </div>
+    <div class="card"><span class="tag">PDF</span><h3>Relatório Catálogo Esportivo</h3><a href="Relatório%20Catálogo%20esportivo.pdf">Abrir</a></div>
+    <div class="card"><span class="tag">CSV</span><h3>Eventos CSV</h3><a href="Eventos.csv">Abrir</a></div>
+    <div class="card"><span class="tag">JSON</span><h3>Eventos JSON</h3><a href="Eventos.json">Abrir</a></div>
+    <div class="card"><span class="tag">PY</span><h3>Código Python</h3><a href="atividade_python.py">Abrir</a></div>
+    <div class="card"><span class="tag">MD</span><h3>README</h3><a href="Read%20me">Abrir</a></div>
 
 </div>
+
+<!-- ================= ATIVIDADE 2 ================= -->
+<h2>Atividade 2 - Modularização</h2>
+<div class="grid">
+
+    <div class="card"><span class="tag">DOCX</span><h3>Relatório Modularização</h3><a href="Relatorio_Modularização.docx">Abrir</a></div>
+    <div class="card"><span class="tag">PY</span><h3>ChatGPT Script</h3><a href="chatgpt.py">Abrir</a></div>
+    <div class="card"><span class="tag">PY</span><h3>Gemini Script</h3><a href="gemini.py">Abrir</a></div>
+
+</div>
+
+<!-- ================= ATIVIDADE 3 ================= -->
+<h2>Atividade 3 - Algoritmos</h2>
+<div class="grid">
+
+    <div class="card"><span class="tag">PDF</span><h3>Atividade Algoritmos</h3><a href="Atividade%20algoritmos.pdf">Abrir</a></div>
+
+</div>
+
+<!-- ================= ATIVIDADE 4 ================= -->
+<h2>Atividade 4 - Algoritmos Atualizada</h2>
+<div class="grid">
+
+    <div class="card"><span class="tag">PDF</span><h3>Atividade Algoritmos Atualizada</h3><a href="Atividade%20algoritmos%20atualizada.pdf">Abrir</a></div>
+
+</div>
+
+<!-- ================= ATIVIDADE 5 ================= -->
+<h2>Atividade 5 - Introdução a Algoritmos com Python</h2>
+<div class="grid">
+
+    <div class="card"><span class="tag">PDF</span><h3>Introdução a Algoritmos com Python</h3><a href="ATIVIDADE%20-%20INTRODUÇÃO%20A%20ALGORITMOS%20COM%20PYTHON.pdf">Abrir</a></div>
+
+</div>
+
+<!-- ================= ATIVIDADE 6 ================= -->
+<h2>Atividade 6 - Exercícios de Engenharia</h2>
+<div class="grid">
+
+    <div class="card"><span class="tag">PDF</span><h3>Exercícios Algoritmos ENG</h3><a href="exercicios_algoritmos_eng.pdf">Abrir</a></div>
+
+</div>
+
+<!-- ================= ATIVIDADE 7 ================= -->
+<h2>Atividade 7 - Problema 01 Treliças Planas</h2>
+<div class="grid">
+
+    <div class="card"><span class="tag">PDF</span><h3>Problema 01 - Treliças Planas</h3><a href="Problema%2001%20Análise%20de%20Tensões%20em%20Treliças%20Planas.pdf">Abrir</a></div>
+
+</div>
+
+</div>
+
+<footer>
+    Feito para portfólio acadêmico
+</footer>
 
 </body>
 </html>
